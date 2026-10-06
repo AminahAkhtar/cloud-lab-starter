@@ -1,0 +1,21 @@
+# TODO (students): implement the CI/CD pipeline.
+# Suggested stages: lint -> test -> build Docker image -> push to registry -> deploy
+name: CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  # TODO 1: lint + test job (setup-python, pip install -r requirements-dev.txt, flake8, pytest)
+
+  # TODO 2: build job (needs: test) -> docker build
+
+  # TODO 3: push image to GitHub Container Registry (ghcr.io) or Docker Hub using secrets
+
+  # TODO 4 (bonus): deploy step (e.g., to Render, Azure, AWS, or a VM via SSH)
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Replace me with real jobs"
